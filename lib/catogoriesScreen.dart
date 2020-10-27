@@ -12,6 +12,10 @@ class CategoriesScreen extends StatelessWidget {
       ),
       children: [
         Text("Hey"),
+        Text("Hey"),
+        Text("Hey"),
+        Text("Hey"),
+        Text("Hey"),
       ],
     );
   }
