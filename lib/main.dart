@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/vishnu%20pothan/Desktop/02%20Work/Project/ANDROID/Flutter/recipe_app/lib/screen/categoryMealsScreen.dart';
+import './screen/categoryMealsScreen.dart';
 
 import 'screen/categoriesScreen.dart';
 
