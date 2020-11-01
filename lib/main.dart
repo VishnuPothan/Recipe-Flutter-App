@@ -1,8 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'file:///C:/Users/vishnu%20pothan/Desktop/02%20Work/Project/ANDROID/Flutter/recipe_app/lib/screen/categoryMealsScreen.dart';
 
-import 'categoriesScreen.dart';
+import 'screen/categoriesScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +31,11 @@ class MyApp extends StatelessWidget {
             )),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CategoriesScreen(),
+      //home: CategoriesScreen(),
+      routes: {
+        '/': (ctx) => CategoriesScreen(),
+        CategoryMealsScreen.routeName:  (ctx) => CategoryMealsScreen(),
+      },
     );
   }
 }
