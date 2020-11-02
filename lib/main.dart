@@ -3,34 +3,33 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import './screen/mealDetailsScreen.dart';
 import './screen/categoryMealsScreen.dart';
-
-import 'screen/categoriesScreen.dart';
+import './screen/tabsScreen.dart';
 
 void main() => runApp(MyApp());
 
-Map<int, Color> color =
-{
-  50:Color.fromRGBO(149, 95, 91, .1),
-  100:Color.fromRGBO(149, 95, 91, .2),
-  200:Color.fromRGBO(149, 95, 91, .3),
-  300:Color.fromRGBO(149, 95, 91, .4),
-  400:Color.fromRGBO(149, 95, 91, .5),
-  500:Color.fromRGBO(149, 95, 91, .6),
-  600:Color.fromRGBO(149, 95, 91, .7),
-  700:Color.fromRGBO(149, 95, 91, .8),
-  800:Color.fromRGBO(149, 95, 91, .9),
-  900:Color.fromRGBO(149, 95, 91, 1),
+Map<int, Color> color = {
+  50: Color.fromRGBO(149, 95, 91, .1),
+  100: Color.fromRGBO(149, 95, 91, .2),
+  200: Color.fromRGBO(149, 95, 91, .3),
+  300: Color.fromRGBO(149, 95, 91, .4),
+  400: Color.fromRGBO(149, 95, 91, .5),
+  500: Color.fromRGBO(149, 95, 91, .6),
+  600: Color.fromRGBO(149, 95, 91, .7),
+  700: Color.fromRGBO(149, 95, 91, .8),
+  800: Color.fromRGBO(149, 95, 91, .9),
+  900: Color.fromRGBO(149, 95, 91, 1),
 };
 
 class MyApp extends StatelessWidget {
   MaterialColor colorCustom = MaterialColor(0xFF955F5B, color);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Recipe',
       theme: ThemeData(
         primarySwatch: colorCustom,
-        accentColor: colorCustom,
+        accentColor: Colors.white,
         canvasColor: Color.fromRGBO(248, 226, 184, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
@@ -49,8 +48,8 @@ class MyApp extends StatelessWidget {
       ),
       //home: CategoriesScreen(),
       routes: {
-        '/': (ctx) => CategoriesScreen(),
-        CategoryMealsScreen.routeName:  (ctx) => CategoryMealsScreen(),
+        '/': (ctx) => TabsScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
       },
       /*onGenerateRoute: (settings){
