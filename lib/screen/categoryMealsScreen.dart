@@ -4,9 +4,6 @@ import '../widgets/mealItem.dart';
 import '../models/meal.dart';
 
 class CategoryMealsScreen extends StatefulWidget {
-  /*final String categoryId;
-  final String categoryTitle;
-  CategoryMealsScreen(this.categoryId, this.categoryTitle);*/
   static const routeName = '/categoryMeals';
   final List<Meal> availableMeals;
 
