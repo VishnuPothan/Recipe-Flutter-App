@@ -1,6 +1,6 @@
 # recipe_app
 
-A new Flutter application.
+##Details
 
 Application for showing different categories of recipes.
 The filter and favourite option for usability is provided.
