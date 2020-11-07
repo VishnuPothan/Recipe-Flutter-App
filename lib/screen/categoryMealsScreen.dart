@@ -21,12 +21,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
   var _loadedInitData = false;
 
   @override
-  void initState() {
-    // ..
-    super.initState();
-  }
-
-  @override
   void didChangeDependencies() {
     if (!_loadedInitData) {
       final routeArgs =
